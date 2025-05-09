@@ -55,3 +55,7 @@ class ChatGPTController extends Controller
         return view('chat');
     }
 }
+
+
+
+
