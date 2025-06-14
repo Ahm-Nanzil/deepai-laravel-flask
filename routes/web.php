@@ -17,7 +17,6 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::post('/predict', [MLController::class, 'predict']);
 // use App\Http\Controllers\SentimentController;
 
 // Route::post('/analyze-sentiment', [SentimentController::class, 'analyze']);
@@ -34,9 +33,9 @@ Route::get('/sentiment', [SentimentController::class, 'showForm'])->name('sentim
 // Handle form submission
 Route::post('/analyze-sentiment', [SentimentController::class, 'analyze'])->name('analyze-sentiment');
 // Route::post('/predict', [MlApiController::class, 'predict']);
-Route::get('/predict-form', function () {
-    return view('predict');
-});
+// Route::get('/predict-form', function () {
+//     return view('predict');
+// });
 // routes/web.php
 use App\Http\Controllers\MlApiController;
 
